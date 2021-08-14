@@ -31,7 +31,7 @@ public class StudentController {
 		mv.addObject("user", user);
 		return mv;
 	}
-	@RequestMapping("/admin")
+	@GetMapping("/admin")
 	@ResponseBody
 	public List<Student>posting(){
 		return repo.findAll();
