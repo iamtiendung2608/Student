@@ -43,12 +43,8 @@ public class Student {
 	}
 	@Override
 	public String toString() {
-		String result=new String();
-		if(gender=="Male") {
-		 result = String.format("Student Id: %s, his name is: %s, phone: %s, birth:%s  ",id,name,phone,birth);
-		}
-		else
-			result = String.format("Student Id: %s, her name is: %s, phone: %s, birth: %s  ",id,name,phone,birth);
-		return result;
+		return "Student [id=" + id + ", name=" + name + ", gender=" + gender + ", phone=" + phone + ", birth=" + birth
+				+ "]";
 	}
+	
 }
